@@ -1,0 +1,14 @@
+CREATE TABLE user(
+id int(4) PRIMARY KEY auto_increment,
+userName varchar(30) not null,
+userPwd varchar(50) not null
+);
+INSERT INTO `ria_month`.`user` (`id`, `userName`, `userPwd`) VALUES (NULL, 'admin', 'admin');
+CREATE TABLE doctor(
+id int(11) PRIMARY KEY auto_increment,
+name varchar(25) not null,
+gender varchar(2) not null,
+hobby varchar(100),
+birth date not null,
+deptName varchar(25) not null
+);
